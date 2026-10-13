@@ -1,0 +1,214 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+
+#section-1{
+    padding : 64px 28px 48px;
+    /* border : 1px solid red; */
+}
+
+#section-1>p{
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#section-1>p>span{
+    color : #ad43db;
+}
+
+#section-2{
+    position : relative;
+    /* border : 1px solid red; */
+    height: 41.5rem;
+    overflow: hidden;
+}
+
+
+#section-2-gradient{
+    position : absolute;
+    background-image: linear-gradient(#14142b00 50%, #14142bcc 99.81%);;
+    height: 100%;
+    width : 100%;
+    z-index : 1;
+    /* inset: 0; */
+}
+
+
+#section-2>img{
+    position : absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#section-2-content{
+    /* border : 1px solid black;  */
+    box-sizing: border-box;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap : 10px;
+    color : #FFFFFF;
+    position: absolute;
+    z-index: 4;
+    text-shadow: rgba(0, 0, 0, 0.8) -2px 2px 0px;
+    text-transform: uppercase;
+
+}
+
+
+#section-2-content-container{
+    /* border : 1px solid blue; */
+    /* width: 90%; */
+    margin-right : 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+#section-2-content-1{
+    font-weight: 400;
+    width: 100%;
+    line-height: 32px;
+    font-size: 32px;
+}
+
+#section-2-content-2{
+    font-weight: 900;
+    font-size: 32px;
+}
+
+#section-2-content-2>span{
+    color : #ffe003;
+    font-size: 32px;
+}
+
+
+
+#section-3-container{
+    margin : 64px 24px;
+    /* border : 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap : 16px;
+}
+
+#section-3-container>h2{
+    font-size: 32px;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+#section-3-container>p{
+    font-size: 400;
+}
+
+#readmore{
+    font-size: 18px;
+    color: #470A68;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.hide{
+    display: none;
+}
+
+#section-4{
+
+    /* border : 1px solid green; */
+    background-image: url(../assets/about-planet-fitness/pf-today-section-bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #eceaf9;
+    padding-top : 86px;
+}
+
+#section-4-header-container{
+    padding : 0px 24px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap : 1rem;
+}
+
+#section-4-header-container>h2{
+    font-size: 2.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#section-4-header-container>h2>span{
+    color : #470a68;
+}
+
+#section-4-header-container>p{
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+#section-4-header-container>button{
+    background-color: #470a68;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.125rem;
+    height: 3.5rem;
+    font-weight: 600;
+    border-radius: 1.75rem;
+}
+
+#section-4-footer>img{
+    width : 100%;
+}
+
+#section-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-5-container{
+    width : 90%;
+    background-color: #470A68;
+    color : #FFFFFF;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 1.5rem;
+    margin: 48px 0px;
+}
+
+#section-5-container>p{
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#section-5-container>p>span{
+    color : #ffe003;
+    font-size: 40px;
+}
+
+#section-5-container>button{
+    margin-top : 1.5rem;
+    width : 100%;
+    max-width: 24rem;
+    font-weight: 600;
+    padding : 1rem 2rem;
+    font-size: 1.125rem;
+    border-radius: 1.75rem;
+    border: none;
+    color: #470a68;
+}

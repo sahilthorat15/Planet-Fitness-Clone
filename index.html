@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Fitness Gym</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/png" href="./Images/search.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header id="main-header">
+        <img src="./Images/Logo.svg" id="header-logo">
+        <div id="header-right">
+            <button>Join Now</button>
+            <img src="./Images/hamberger.png" id="icon" />
+        </div>
+    </header>
+
+    <!-- When you want pop-up make body to overflow as hidden -->
+    <section id="popup">
+
+        <div id="popup-container">
+            <header id="popup-header">
+                <img src="./Images/Logo.svg" id="popup-header-logo" />
+                <img src="./Images/cross.png" id="popup-close" />
+            </header>
+
+            <div id="popup-content">
+
+                <div class="line"></div>
+
+                <div class="popup-content-heading">
+                    <p class="popup-content-heading-text">Memberships</p>
+                    <img class="popup-content-heading-icon" src="./Images/icons/right-icon.svg"/>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="popup-content-dropdown">
+                    <div class="popup-content-dropdown-heading" id="why-pf-heading">
+                        <p class="popup-content-heading-text">Why PF</p>
+                        <img class="popup-content-heading-icon down-arrow" id="why-pf-icon" src="./Images/icons/right-icon.svg" />
+                    </div>
+                    <!-- Make it flex on click JS -->
+                    <div class="popup-content-dropdown-list">
+                        <p>Why Planet Fitness</p>
+                        <p>About Planet Fitness</p>
+                        <p>PF Purpose</p>
+                        <p>Member Perks</p>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="popup-content-dropdown">
+                    <div class="popup-content-dropdown-heading" id="work-out-with-us">
+                        <p class="popup-content-heading-text">Work Out With Us</p>
+                        <img class="popup-content-heading-icon down-arrow" id="work-out-with-us-icon" src="./Images/icons/right-icon.svg" />
+                    </div>
+                    <!-- Make it flex on click JS -->
+                    <div class="popup-content-dropdown-list"  id="work-out-with-us-list">
+                        <p>Our Clubs</p>
+                        <p>PF App</p>
+                        <p>Blog</p>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="popup-content-heading">
+                    <p class="popup-content-heading-text">PF Store</p>
+                    <!-- Not applying a class to below because it is already in that size -->
+                    <img src="./Images/icons/externallink-icon.svg" />  
+                </div>
+                
+                <div class="line"></div>
+
+                
+                <div id="popup-region">
+                    <!-- Drowpdown languagas -->
+                    <div id="popup-region-heading">
+                        <div id="popup-region-heading-left">
+                            <img src="./Images/icons/us-flag.svg"/>
+                            <p>Region: <span class="purple-highlight" id="popup-region-selected">US (English)</span></p>
+                        </div>
+                        <img class="popup-content-heading-icon" id="pop-dropdow=heading-arrow" src="./Images/icons/right-icon.svg"/>
+                    </div>
+
+                    <div id="popup-region-list">
+                        <div>
+                            <img src="./Images/icons/us-flag.svg"/>
+                            <p>US (English)</p>
+                        </div>
+                        <div>
+                            <img src="./Images/icons/us-flag.svg"/>
+                            <p>US (Spanish)</p>
+                        </div>
+
+                        <div>
+                            <img src="./Images/icons/india-flag.png" id="india"/>
+                            <p>India (English)</p>
+                        </div>
+                        <div>
+                            <img src="./Images/icons/mexico-flag.svg"/>
+                            <p>Mexio (Spanish)</p>
+                        </div>
+                        <div>
+                            <img src="./Images/icons/canada-icon.svg"/>
+                            <p>Canada (English)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="popup-content-footer">
+                    <img src="./Images/icons/SignIn-icon.svg"/>
+                    <p>My Account</p>
+                </div>
+
+                <div class="popup-content-footer">
+                    <img src="./Images/icons/CircledQuestion-icon.svg" id="question-mark"/>
+                    <p>Need Help?</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Section1 : Search bar and all -->
+    <div id="section-one">
+        <!-- This is for video background -->
+        <video autoplay muted loop playsinline>
+            <source src="./videos/gym.mp4" type="video/mp4">
+        </video>
+
+        <!-- This is for background color -->
+        <div id="background-color"></div>
+
+        <!-- Actual content -->
+        <div id="section-one-content">
+            <div id="section-one-top">
+                <h1 id="section-one-top-first">COME AS YOU ARE.</h1>
+                <h1 id="section-one-top-highlight">LEAVE A LITTLE STRONGER</h1>
+            </div>
+            <div id="section-one-middle">
+                <input type="text" placeholder="Search by address, city, or ZIP code">
+                <div>
+                    <img src="./Images/search.png" />
+                </div>
+            </div>
+
+            <div id="section-one-bottom">
+                <h1>EXPLORE CLUBS NEARBY</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Near by Gym cards -->
+    <div id="section-two">
+        <div id="section-two-cards-outside-container">
+
+            <div class="section-two-cards">
+                <div class="section-two-cards-container">
+                    <div class="section-two-cards-header">
+                        <div class="section-two-cards-header-1">Birmingham (Homewood), AL</div>
+                        <div class="section-two-cards-header-2">5 mi</div>
+                    </div>
+                    <div class="section-two-cards-location">
+                        <img src="./Images/location.png" />
+                        <div class="section-two-cards-location-2">140 Wildwood Pkwy, Birmingham, AL 35209</div>
+                    </div>
+                    <div class="section-two-cards-hr">
+
+                    </div>
+                    <div class="section-two-cards-footer">
+                        <div class="section-two-cards-footer-1">Club Details</div>
+                        <button>Review Plans</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-two-cards">
+                <div class="section-two-cards-container">
+                    <div class="section-two-cards-header">
+                        <div class="section-two-cards-header-1">Vestavia Hills, AL</div>
+                        <div class="section-two-cards-header-2">8 mi</div>
+                    </div>
+                    <div class="section-two-cards-location">
+                        <img src="./Images/location.png" />
+                        <div class="section-two-cards-location-2">700 Montgometry Hw, Ste 138, Vestavia Hills, AL 35216
+                        </div>
+                    </div>
+                    <div class="section-two-cards-hr">
+
+                    </div>
+                    <div class="section-two-cards-footer">
+                        <div class="section-two-cards-footer-1">Club Details</div>
+                        <button>Review Plans</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-two-cards">
+                <div class="section-two-cards-container">
+                    <div class="section-two-cards-header">
+                        <div class="section-two-cards-header-1">Birmingham (Crestline), AL</div>
+                        <div class="section-two-cards-header-2">9 mi</div>
+                    </div>
+                    <div class="section-two-cards-location">
+                        <img src="./Images/location.png" />
+                        <div class="section-two-cards-location-2">4500 Montevallo Rd, Birmingham, AL 35210</div>
+                    </div>
+                    <div class="section-two-cards-hr">
+
+                    </div>
+                    <div class="section-two-cards-footer">
+                        <div class="section-two-cards-footer-1">Club Details</div>
+                        <button>Review Plans</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="section-two-show-btn">
+                <button>Show All Clubs</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Memberships -->
+    <div id="section-three">
+        <div id="section-three-container">
+            <div id="section-three-part1">
+                <div id="section-three-part1-heading">
+                    MEMBERSHIPS
+                </div>
+                <div id="section-three-part1-body">
+                    We offer the PF Black Card<sup>©</sup> Membership and Classic Membership. Both get you access to The
+                    Judgement Free Free Zone<sup>©</sup>, and tons of cardio and strength equipment.
+                </div>
+            </div>
+
+            <!-- Created this middlePart div because we have to change it to flex-row for desktop -->
+            <div id="section-three-middlePart">
+
+                <div id="section-three-part2">
+                    <div id="section-three-part2-container">
+                        <div id="section-three-part2-1">
+                            <div id="section-three-part2-1-left">PF BLACK CARD<sup>©</sup></div>
+                            <div id="section-three-part2-1-right">BEST VALUE</div>
+                        </div>
+                        <div id="section-three-part2-2">
+                            <p id="section-three-part2-2-1">Starting at</p>
+                            <p id="section-three-part2-2-2"><span id="price">$24.99</span>/mo<sup>*</sup></p>
+                            <p id="section-three-part2-2-3">plus taxes & fees</p>
+                        </div>
+                        <div id="section-three-part2-3">
+                            Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much more!
+                        </div>
+                        <div id="section-three-part2-4">
+                            <div>Learn More</div>
+                            <button>Join Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="section-three-part3">
+                    <div id="section-three-part3-container">
+                        <div id="section-three-part3-1">
+                            CLASSIC
+                        </div>
+                        <div id="section-three-part3-2">
+                            <p>Starting at</p>
+                            <p><span>$15</span>/mo*</p>
+                            <p id="section-three-part3-2-3">plus taxes & fees</p>
+                        </div>
+                        <div id="section-three-part3-3">
+                            Our standard membership, with unlimited access to your home club
+                        </div>
+                        <div id="section-three-part3-4">
+                            <div>Learn More</div>
+                            <button>Join Now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="section-three-part4">
+                <button>Compare Memberships</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Section 4 : Slider-->
+
+    <section id="section-four">
+
+        <div id="section-four-slider">
+            
+            <!-- Container is bcz to scroll -->
+            <div id="section-four-slider-container">
+                <div id="section-four-slider-card1" class="section-four-slider-card">
+
+                    <img class="card-header" src="./Images/section4/slider-1.avif"/>
+
+                    <div class="card-content">
+                        <h2>STRAVA MOVE YOUR WAY 2026 CHALLENGE</h2>
+                        <p>Complete the Challenge by logging 300 minutes of activity in the Strava app. Once completed, you’ll earn the exclusive Planet Fitness Move Your Way digital badge! You got this! </p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                
+
+                <div id="section-four-slider-card2"  class="section-four-slider-card">
+                    <img class="card-header" src="./Images/section4/slider-2.avif"/>
+                    <div class="card-content">
+                        <h2>Award-Winning Member Support</h2>
+                        <p>We’re proud to be recognized on America’s Best Customer Service list, a reflection of our team’s commitment to creating a friendly environment where everyone feels accepted and respected.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div id="section-four-slider-card2"  class="section-four-slider-card">
+                    <img class="card-header" src="./Images/section4/slider-3.avif"/>
+                    <div class="card-content">
+                        <h2>WELCOME TO PLANET FITNESS</h2>
+                        <p>We’ve created a comfortable, safe and energetic environment for everyone. A space where you can go at your own pace, and do your own thing without ever having to worry about being judged.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div id="section-four-slider-card2"  class="section-four-slider-card">
+                    <img class="card-header" src="./Images/section4/slider-4.avif"/>
+                    <div class="card-content">
+                        <h2>TAKE A VIRTUAL CLUB TOUR!</h2>
+                        <p>Join us on a virtual club tour around a Planet Fitness. You’ll learn all about the different areas of the club and Teddy will show you how to get the most out of a membership and where you can start your fitness journey.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="section-four-controllers">
+            <img src="./Images/section4/Arrow.svg" id="left-icon"/>
+            <p><span id="current-slide">1</span>/4</p>
+            <img src="./Images/section4/Arrow.svg" id="right-icon"/>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Section 5 :  -->
+    <section id="section-five">
+        <div id="section-five-background-image">
+            <img src="./Images/section5/poster.jpg" />
+        </div>
+
+        <!-- Below div is for making the gradient -->
+        <div id="section-five-background-gradient"></div>
+
+        <div id="section-five-content">
+            <div id="section-five-content-1">
+                <p>A PLACE WHERE</p>
+                <h2><span id="highlight">EVERYONE</span> FEELS WELCOME</h2>
+            </div>
+
+            <div id="section-five-content-2">
+                <div id="section-five-content-2-card1">
+                    <img src="./Images/section5/coin.png" />
+                    <h3>Best Value on the Planet</h3>
+                    <p>We belive in providing a high-quality experience at an affordable cost.</p>
+                    <p class="underline bolder">Learn More</p>
+                </div>
+
+                <div id="section-five-content-2-card2">
+                    <img src="./Images/section5/gym-equipment.png" />
+                    <h3>Tons of Equipment</h3>
+                    <p>Tons of cardio and strength equipment, all in a clean and spacious enviornment.</p>
+                    <p class="underline bolder">Learn More</p>
+                </div>
+                <div id="section-five-content-2-card3">
+                    <img src="./Images/section5/worldwide.png" />
+                    <h3>2,900+ Locations</h3>
+                    <p>More than 2,900 Planet Fitness locations worldwide.</p>
+                    <p class="underline bolder">Learn More</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 : Download PF App -->
+    <section id="section-six">
+        <div id="section-six-container">
+            <div id="section-six-1">
+                <h2>
+                    Bring the
+                    <br>
+                    Judgement Free Zone® <span>Anywhere</span>
+                </h2>
+                <div>
+                    The PF App has it all – pick the best time to visit your club with the Crowd Meter, track your
+                    activities, access hundreds of digital on-demand workouts, and more! Ready to get movin’?
+                </div>
+                <button>Download the PF App</button>
+            </div>
+
+
+            <div id="section-six-2">
+                <img src="./Images/section6/phone.png" />
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Section 7 :  -->
+
+
+
+
+
+
+
+
+    <!-- Section 8 :  -->
+    <section id="section-8">
+        <div id="section-8-container">
+            <div id="section-8-header">GET STARTED TODAY</div>
+            <div id="section-8-middle">
+                <div>
+                    <img src="./Images/section8/MagnifierSearch-icon.svg"/>
+                    <p>Find a Club Near You</p>
+                </div>
+                <div>
+                    <img src="./Images/section8/Perks-icon.svg"/>
+                    <p>Explore Perks</p>
+                </div>
+                <div>
+                    <img src="./Images/section8/VirtualTour-icon.svg"/>
+                    <p>Take a Virtual Tour</p>
+                </div>
+            </div>
+
+            <p id="section-8-footer"> 
+                *Classic memberships begin at $15 and PF Black Card® memberships begin at $24.99, billed monthly. Memberships may include 12-month commitment. State and local taxes may apply. Subject to an annual fee of $49. Prices may vary depending on location. Services and perks subject to availability and restrictions. Must be at least 18 years old to enroll, or 13-17 with parent/guardian. State and local restrictions on tanning frequency with PF Black Card® memberships apply. Participating locations only. Locations independently owned and operated. See home club for details. We reserve the right to correct pricing errors or withdraw offer at any time. ©2026 Planet Fitness Franchising LLC
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Section 9 : Download button -->
+    <section id="section-9">
+        <div id="section-9-container">
+            <img src="./Images/section9/Logo-Brand-Footer.svg"/>
+            <button>Download the PF App</button>
+        </div>
+    </section>
+
+
+    <!-- Section 10 : Footer -->
+    <footer>
+        <div id="footer-container">
+            <div id="footer-dropdown">
+                <img src="./Images/icons/us-flag.svg"/>
+                <p>Region: <span id="bolder-text">US(English)</span></p>
+                <img src="./Images/footer/arrow.png" id="down-arrow"/>
+            </div>
+            
+            <div>
+                card2
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
