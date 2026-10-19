@@ -1,0 +1,250 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+
+#section-1{
+    /* border : 1px solid red; */
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#section-1-container{
+    /* border : 1px solid black; */
+    width : 85%;
+    margin : 64px 0px 48px;
+}
+
+#section-1-container>p{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#section-1-container>p>span{
+    color : #ad43db
+}
+
+
+#section-2{
+    /* border : 1px solid red; */
+    position: relative;
+    height: 41.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    color : white;
+}
+
+#section-2>img{
+    width: 100%;
+    height: 100%;
+    position : absolute; 
+    object-fit: cover;
+    object-position: center;
+}
+
+#section-2-gradient{
+    position : absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(253deg, #14142b00 61.3%, #14142bcc 100%);
+}
+
+#section-2-content{
+    z-index: 3;
+    padding : 0px 24px 80px;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px black;
+    font-weight: 900;
+}
+
+#section-2-content-1{
+    font-weight: 400;
+}
+
+#section-2-content-3{
+    color: #FFE003;
+}
+
+
+/* Section 3 :  */
+#section-3{
+    background-color: #ad43db;
+    -webkit-mask: url("../assets/why-planet-fitness/section3/icon1.svg") no-repeat center/contain;
+    mask: url("../assets/why-planet-fitness/section3/icon1.svg") no-repeat center / contain;
+}
+
+
+
+/* Section 4 :  */
+
+
+#section-4-left{
+    /* border : 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4-left-container{
+    /* border: 1px solid blue; */
+    width : 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    margin : 64px 0px;
+}
+
+#section-4-heading{
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width : 100%;
+    text-align: left;
+}
+
+#section-4-content{
+    /* border : 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+}
+
+.section-4-content-1{
+    /* border : 1px solid green; */
+    width : 100%;
+    /* padding : 24px 0px; */
+    border-bottom : 1px solid #c5c4c4;
+}
+
+.section-4-content-1-heading{
+    /* border : 1px solid palevioletred; */
+    display: flex;
+    justify-content: space-between;
+    padding : 24px 0px;
+
+}
+
+.section-4-content-1-heading-left{
+    /* border : 1px solid sandybrown; */
+    display: flex;
+    align-items: center;
+    gap : 16px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.section-4-content-1-heading-left>img{
+    width : 32px;
+}
+
+.arrow-div{
+    display: flex;
+    justify-content: center;
+    /* border : 1px solid gray; */
+    width : 24px;
+
+}
+
+.arrow-icon{
+    width : 7px;
+    transform: rotate(90deg);
+}
+
+.section-4-contents{
+    /* border : 1px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : 1.5rem;
+    display: none;
+}
+
+.section-4-contents>img{
+    width : 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 28rem;
+    border-radius: 3rem;
+    /* object-position: center; */
+    /* max-width: ; */
+}
+
+.section-4-contents>p{
+    width : 100%;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+    /* border: 1px solid black; */
+}
+
+#section-4-footer{
+    /* border : 1px solid red; */
+    width : 100%;
+    margin-top: 1.5rem;
+}
+
+#section-4-footer>button{
+    width : 100%;
+    padding : 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    background-color: #470a68;
+    border : none;
+    border-radius : 100px;
+    color : #FFFFFF;
+}
+
+
+
+
+/* Section 5 */
+
+#section-5{
+    /* border : 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/why-planet-fitness/section5/bg-img-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #470a68;
+    /* object-fit: cover; */
+    /* aspect-ratio: 1; */
+}
+
+#section-5-container{
+    width : 90%;
+    /* border : 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+    margin-top : 64px;
+}
+
+#section-5-container>p{
+    color : #FFFFFF;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#section-5-container>p>span{
+    color : #ffe003;
+    font-weight: 900;
+}

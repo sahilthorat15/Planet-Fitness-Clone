@@ -808,3 +808,194 @@ tr:nth-child(odd) {
     border-radius: 100px;
     font-size: 1rem;
 }
+
+
+/* Section 11 : Find a club */
+#section-11{
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#find-club-container{
+    /* border : 1px solid green; */
+    width : 90%;
+    max-width: 28rem;
+    margin : 64px 0px;
+    /* width : 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 1.5rem;
+    overflow: hidden;
+}
+
+
+#find-club-container>p{
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#find-club-search-div{
+    border : 1px solid #a4a4a4;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    height: 3.5rem;
+    border-radius: 100px;
+    padding-left: 20px;
+    padding-right : 10px;
+}
+
+#find-club-search-div>input{
+    width : 100%;
+    height: 100%;
+    border: none;
+}
+
+#find-club-search-icon-div{
+    background-color: #470a68;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 40px;
+    border-radius: 100px;
+}
+
+#find-club-search-icon-div>img{
+    width : 24px;
+    margin: 0.5rem;
+}
+
+/* Section 12 :  */
+
+#section-12{
+    /* border : 1px solid red; */
+    background-color: #f7f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-12-container{
+    /* border : 1px solid black; */
+    width : 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap : 50px;
+    margin : 4rem 0;
+}
+
+#section-12-container>p{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+#membership-faq-container{
+    width: 100%;
+    /* border : 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.membership-faq-number{
+    /* border : 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #b1b2b2;
+}
+
+.membership-faq-header{
+    /* border : 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 0px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    /* overflow-wrap: break-word; */
+    gap : 1rem;
+    width: 100%;
+
+}
+
+.membership-faq-header>img{
+    width : 14px;
+}
+
+.membership-faq-number-answer{
+    /* border : 1px solid red; */
+    font-size: 1.125rem;
+    overflow-wrap: break-word;
+    line-height: 1.5rem;
+    /* margin: 1rem; */
+    padding : 1rem;
+    display: none;
+}
+
+.showAnswer{
+    display: block;
+}
+
+.section-11-highlight{
+    color : #470a68;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#section-12-footer{
+    /* border : 1px solid red; */
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-12-footer>button{
+    width : 100%;
+    max-width : 24rem;
+    padding : 0 2rem;
+    height: 3.5rem;
+    background-color: #470a68;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border : none;
+    border-radius : 100px;
+}
+
+
+#section-13{
+    /* padding : 0 1.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7fc;
+    padding-bottom : 4rem;
+}
+
+#section-13-container{
+    width : 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap : 18px;
+}
